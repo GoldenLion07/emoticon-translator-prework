@@ -1,5 +1,7 @@
 # require modules here
-require yaml
+require 'yaml'
+requrie 'pry'
+
 def load_library
   # code goes here
 end
