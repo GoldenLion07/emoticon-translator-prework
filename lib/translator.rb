@@ -37,3 +37,7 @@ def get_english_meaning
   result
 
 end
+
+test_emoticons = {"angel"=>["O:)", "japanese_angel"], "angry"=>[">:(", "japanese_angry"], "bored"=>[":O", "japanese_bored"], "confused"=>["%)", "japanese_confused"]}
+
+load_library(test_emoticons)
