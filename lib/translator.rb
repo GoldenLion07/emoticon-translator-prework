@@ -26,15 +26,14 @@ emoticon_hash = load_library(path)
   result
 end
 
-def get_english_meaning
+def get_english_meaning(path, emoticon)
   # code goes here
-    library = load_library(file_path)
-  library["get_emoticon"].each do |key, value|
-    if key == emoticon
-      puts value
-    end
+   emoticon_hash = load_library(path)
+  result = emoticon_hash["get_meaning"][emoticon]
+  if result == nil
+    result = "Sorry, that emoticon was not found" 
   end
-
+  result
 end
 
 test_emoticons = {"angel"=>["O:)", "japanese_angel"], "angry"=>[">:(", "japanese_angry"], "bored"=>[":O", "japanese_bored"], "confused"=>["%)", "japanese_confused"]}
